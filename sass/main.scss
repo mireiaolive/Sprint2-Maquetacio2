@@ -2,6 +2,9 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
+$nav-pills-link-active-color: #000;
+$nav-pills-link-active-bg: none;
+
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -59,6 +62,11 @@ $secondary: #fa5959;
     height: 100px;
 }
 
+.nav-link.active,
+.show > .nav-link {
+    border-bottom: 2px solid #fa5959;
+}
+
 /* hover svg in an img tag */
 #social:hover {
     filter: invert(63%) sepia(94%) saturate(3173%) hue-rotate(323deg)
@@ -78,4 +86,12 @@ $secondary: #fa5959;
 .accordion-button:not(.collapsed) {
     background-color: $white;
     color: black;
+}
+
+.footer {
+    background-color: #242946;
+}
+
+.footer li a {
+    color: $white;
 }
