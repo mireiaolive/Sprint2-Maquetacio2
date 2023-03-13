@@ -58,3 +58,24 @@ $secondary: #fa5959;
     width: 100px;
     height: 100px;
 }
+
+/* hover svg in an img tag */
+#social:hover {
+    filter: invert(63%) sepia(94%) saturate(3173%) hue-rotate(323deg)
+        brightness(95%) contrast(106%);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: invert(63%) sepia(94%) saturate(3173%) hue-rotate(323deg)
+        brightness(95%) contrast(106%);
+}
+
+.accordion-button::after {
+    filter: invert(36%) sepia(39%) saturate(2336%) hue-rotate(213deg)
+        brightness(94%) contrast(87%);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: $white;
+    color: black;
+}
