@@ -4,3 +4,40 @@ $secondary: #fa5959;
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.btn-outline-danger {
+    background-color: $secondary;
+    color: $white;
+    padding: 7px 30px 7px 30px;
+}
+
+.btn-outline-danger:hover {
+    color: $secondary;
+    background-color: $white;
+}
+
+.nav-link:hover {
+    color: $secondary;
+}
+
+.btn-secondary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white;
+}
+
+.btn-secondary:hover {
+    background-color: $white;
+    border-color: $primary;
+    color: $primary;
+}
+
+.btn-right:hover {
+    background-color: $white;
+    border-color: $black;
+    color: $black;
+}
