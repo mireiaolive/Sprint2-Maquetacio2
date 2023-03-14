@@ -65,7 +65,7 @@
                 </div>
             </nav>
             <div class="container">
-                <div class="row p-5 align-items-center">
+                <div class="row p-5 align-items-center reverse">
                     <div class="col">
                         <h1 class="mb-4">A Simple Bookmark Manager</h1>
                         <p class="fs-5">
@@ -73,21 +73,26 @@
                             favourite websites. Open a new browser tab and see
                             your sites load instantly. Try it for free.
                         </p>
-                        <button
-                            type="button"
-                            class="btn btn-secondary px-5 py-3"
-                        >
-                            Get it on Chrome
-                        </button>
-                        <button
-                            type="button"
-                            class="btn btn-secondary px-5 py-3 btn-right"
-                        >
-                            Get it on Firefox
-                        </button>
+                        <div class="mobile">
+                            <button
+                                type="button"
+                                class="btn btn-secondary px-5 py-3"
+                            >
+                                Get it on Chrome
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-secondary px-5 py-3 btn-right"
+                            >
+                                Get it on Firefox
+                            </button>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="./assets/illustration-hero.svg" />
+                        <img
+                            src="./assets/illustration-hero.svg"
+                            class="mobile-size"
+                        />
                         <div class="square"></div>
                     </div>
                 </div>
@@ -299,10 +304,7 @@
                         >
                     </div>
                 </div>
-                <div
-                    class="card align-items-center top-10"
-                    style="width: 18rem"
-                >
+                <div class="card align-items-center" style="width: 18rem">
                     <img
                         src="./assets/logo-firefox.svg"
                         class="card-img-top p-4"
@@ -321,10 +323,7 @@
                         >
                     </div>
                 </div>
-                <div
-                    class="card align-items-center top-50"
-                    style="width: 18rem"
-                >
+                <div class="card align-items-center" style="width: 18rem">
                     <img
                         src="./assets/logo-opera.svg"
                         class="card-img-top p-4"
@@ -526,7 +525,7 @@
                     <h6 class="py-4 text-uppercase">35.000 + already joined</h6>
                     <h1>Stay up-to-date with what we're doing</h1>
                     <form
-                        class="row justify-content-center needs-validation"
+                        class="row justify-content-center needs-validation mobile-footer"
                         novalidate
                     >
                         <div class="col-8 position-relative">
@@ -554,13 +553,15 @@
                     </form>
                 </div>
                 <div class="row">
-                    <ul class="nav d-flex justify-content-around blue px-5">
+                    <ul
+                        class="nav d-flex justify-content-around blue px-5 mobile-footer"
+                    >
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#"
                                 ><img src="./assets/logo-bookmark_white.svg"
                             /></a>
                         </li>
-                        <div class="col d-flex">
+                        <div class="col d-flex mobile-footer">
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase" href="#"
                                     >features</a

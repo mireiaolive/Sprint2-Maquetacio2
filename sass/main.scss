@@ -6,7 +6,7 @@ $nav-pills-link-active-color: #000;
 $nav-pills-link-active-bg: none;
 
 // import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 .navbar-collapse {
     flex-grow: 0;
@@ -142,4 +142,42 @@ $nav-pills-link-active-bg: none;
 }
 .card:nth-child(3) {
     margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+    .square {
+        width: 400px;
+        height: 260px;
+        top: 270;
+        right: 0;
+    }
+
+    .square-1 {
+        width: 400px;
+        height: 290px;
+        top: 1210;
+        left: 0;
+    }
+
+    .mobile-size {
+        margin: 0;
+        height: 350px;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .mobile {
+        display: flex;
+        gap: 10px;
+    }
+
+    .mobile-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
