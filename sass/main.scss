@@ -145,3 +145,25 @@ $position-value: (
     background-color: $primary;
     color: $white;
 }
+
+.square {
+    position: absolute;
+    top: 300;
+    right: 0;
+    background-color: $primary;
+    width: 550px;
+    height: 400px;
+    z-index: -1;
+    border-radius: 200px 0px 0px 200px;
+}
+
+.square-1 {
+    position: absolute;
+    top: 1070;
+    left: 0;
+    background-color: $primary;
+    width: 550px;
+    height: 400px;
+    z-index: -1;
+    border-radius: 0px 200px 200px 0px;
+}
