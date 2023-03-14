@@ -83,6 +83,17 @@ $nav-pills-link-active-bg: none;
         brightness(94%) contrast(87%);
 }
 
+.card:nth-child(2) {
+    margin-top: 25px;
+}
+.card:nth-child(3) {
+    margin-top: 50px;
+}
+
+.accordion {
+    border-color: none;
+}
+
 .accordion-button:not(.collapsed) {
     background-color: $white;
     color: black;
@@ -92,6 +103,11 @@ $nav-pills-link-active-bg: none;
     background-color: #242946;
 }
 
+.accordion-item {
+    background-color: $white;
+    border-right: $white;
+    border-left: $white;
+}
 .footer li a {
     color: $white;
 }
