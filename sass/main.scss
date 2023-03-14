@@ -83,6 +83,11 @@ $nav-pills-link-active-bg: none;
         brightness(94%) contrast(87%);
 }
 
+#social:hover {
+    filter: invert(63%) sepia(94%) saturate(3173%) hue-rotate(323deg)
+        brightness(95%) contrast(106%);
+}
+
 .card:nth-child(2) {
     margin-top: 25px;
 }
