@@ -298,7 +298,10 @@
                         >
                     </div>
                 </div>
-                <div class="card align-items-center py-4" style="width: 18rem">
+                <div
+                    class="card align-items-center py-4 top-10"
+                    style="width: 18rem"
+                >
                     <img
                         src="./assets/logo-firefox.svg"
                         class="card-img-top"
@@ -317,7 +320,10 @@
                         >
                     </div>
                 </div>
-                <div class="card align-items-center py-4" style="width: 18rem">
+                <div
+                    class="card align-items-center py-4 top-50"
+                    style="width: 18rem"
+                >
                     <img
                         src="./assets/logo-opera.svg"
                         class="card-img-top"
@@ -509,33 +515,103 @@
                     </div>
                 </div>
             </div>
-            <div class="container-lg blue">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"
-                            ><img src="./assets/logo-bookmark.svg"
-                        /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="#">contact</a>
-                    </li>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="#"
-                            ><img src="./assets/icon-facebook.svg"
-                        /></a>
-                        <a class="nav-link" href="#"
-                            ><img src="./assets/icon-twitter.svg"
-                        /></a>
-                    </li>
-                </ul>
-            </div>
+            <footer>
+                <div class="container lightblue">
+                    <div
+                        class="container text-center justify-content-center"
+                        style="width: 500px"
+                    >
+                        <h6 class="py-4 text-uppercase">
+                            35.000 + already joined
+                        </h6>
+                        <h1>Stay up-to-date with what we're doing</h1>
+                        <form
+                            class="row justify-content-center needs-validation"
+                            novalidate
+                        >
+                            <div class="col-8 position-relative">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="inputEmail"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Enter your email adress"
+                                    required
+                                />
+                                <div class="invalid-tooltip">
+                                    Please provide a valid email.
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button
+                                    type="submit"
+                                    id="buttonSecondary"
+                                    class="btn btn-outline-danger px-4 py-2 fs-7"
+                                >
+                                    Contact Us
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <ul class="nav blue">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#"
+                                    ><img
+                                        src="./assets/logo-bookmark_white.svg"
+                                /></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#"
+                                    >features</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#"
+                                    >pricing</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" href="#"
+                                    >contact</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="">
+                            <ul>
+                                <li class="nav-item d-flex">
+                                    <a class="nav-link" href="#"
+                                        ><img src="./assets/icon-facebook.svg"
+                                    /></a>
+                                    <a class="nav-link" href="#"
+                                        ><img src="./assets/icon-twitter.svg"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
+        <script>
+            (function () {
+                "use strict";
+                var forms = document.querySelectorAll(".needs-validation");
+                Array.prototype.slice.call(forms).forEach(function (form) {
+                    form.addEventListener(
+                        "submit",
+                        function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add("was-validated");
+                        },
+                        false
+                    );
+                });
+            })();
+        </script>
         <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 </html>
