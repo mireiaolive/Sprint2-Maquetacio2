@@ -99,15 +99,15 @@ $nav-pills-link-active-bg: none;
     color: black;
 }
 
-.footer {
-    background-color: #242946;
-}
-
 .accordion-item {
     background-color: $white;
     border-right: $white;
     border-left: $white;
 }
-.footer li a {
+
+.blue {
+    background-color: #242946;
+}
+.blue li a {
     color: $white;
 }
